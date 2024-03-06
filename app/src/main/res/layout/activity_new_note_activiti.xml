@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".newNoteActiviti"
+    android:background="@color/background"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:background="@color/background">
+
+        <ImageButton
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/background"
+            android:contentDescription="@string/app_name"
+            android:onClick="on_save_click"
+            android:src="@drawable/save"
+            tools:src="@drawable/save"
+             />
+
+        <EditText
+            style="@style/zagolovok"
+            android:id="@+id/editTitle"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:hint="KITNOTES" />
+
+        <ImageButton
+            android:id="@+id/btnExit"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/background"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/delete"
+            tools:srcCompat="@drawable/delete" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserratsemibold"
+            android:text="Важно"
+            android:textSize="12pt"
+            android:padding="7dp"/>
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Да"
+            android:fontFamily="@font/montserratsemibold"
+            android:textSize="12pt"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="369dp"
+        android:layout_height="546dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="15dp"
+        android:background="@drawable/customshape"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/textNote"
+            android:layout_width="369dp"
+            android:layout_height="546dp"
+            android:ems="10"
+            android:fontFamily="@font/montserratregulsr"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:hint="Напишите заметку"
+
+            android:textColor="@color/black"
+            android:typeface="sans"
+            android:visibility="visible"
+            tools:text="Напишите заметку" />
+    </LinearLayout>
+
+</LinearLayout>

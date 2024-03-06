@@ -1,9 +1,20 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.KITNotes" parent="Theme.Material3.DayNight.NoActionBar">
+
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
     <style name="Theme.KITNotes" parent="Base.Theme.KITNotes" />
+    <style name="zagolovok">
+        <item name="fontFamily">@font/bebasbold</item>
+        <item name="android:textSize">18pt</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="simpleText">
+        <item name="fontFamily">@font/montserrat</item>
+        <item name="android:textSize">12pt</item>
+        <item name="android:gravity">center</item>
+    </style>
 </resources>
